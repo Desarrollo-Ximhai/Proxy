@@ -1,14 +1,168 @@
 model_list:
-  - model_name: gemini-flash-lite
+
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY
+  - model_name: gemini-lite
     litellm_params:
       model: gemini-flash-lite-latest
       custom_llm_provider: gemini
       api_key: os.environ/GEMINI_API_KEY1
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY2
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY3
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY4
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY5
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY6
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY7
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY8
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY9
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY10
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY11
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY12
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY13
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY14
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-flash-lite-latest
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY15
+
+      
   - model_name: gemini-flash
     litellm_params:
       model: gemini-3.6-flash
       custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY1
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
       api_key: os.environ/GEMINI_API_KEY2
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY3
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY4
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY5
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY6
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY7
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY8
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY9
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY10
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY11
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY12
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY13
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY14
+  - model_name: gemini-lite
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY15
+    
 
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"

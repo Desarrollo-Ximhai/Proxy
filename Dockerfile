@@ -5,7 +5,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # 3. Instalamos LiteLLM básico y la librería de Gemini
-RUN pip install --no-cache-dir 'litellm[proxy]' google-generativeai
+RUN pip install --no-cache-dir 'litellm[proxy]==1.93.0' google-generativeai
 
 # 4. Copiamos tu archivo config.yaml de tu GitHub al contenedor
 COPY config.yaml /app/config.yaml
