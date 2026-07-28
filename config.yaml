@@ -1,0 +1,10 @@
+model_list:
+  - model_name: gemini-modelo # El nombre que tú usarás para llamarlo
+    litellm_params:
+      model: gemini/gemini-1.5-flash # o gemini-1.5-pro, el que prefieras
+      api_key: "os.environ/GEMINI_API_KEY"
+
+litellm_settings:
+  # Apagamos telemetría para ahorrar memoria
+  telemetry: False
+  set_verbose: False
