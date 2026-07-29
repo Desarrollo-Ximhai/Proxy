@@ -11,4 +11,4 @@ RUN pip install --no-cache-dir 'litellm[proxy]==1.93.0' google-generativeai
 COPY config.yaml /app/config.yaml
 
 # 5. La orden final para encenderlo usando solo 1 worker para no saturar la RAM
-CMD ["sh", "-c", "litellm --config /app/config.yaml --port $PORT"]
+CMD ["sh", "-c", "litellm --config /app/config.yaml --env /etc/secrets/.env --port $PORT"]
