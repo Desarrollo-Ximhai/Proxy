@@ -294,6 +294,12 @@ model_list:
       api_key: os.environ/CHUTES_API_KEY
       allowed_openai_params: ["tools", "tool_choice"]   
 
+  - model_name: gemini-xcycle
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
 
