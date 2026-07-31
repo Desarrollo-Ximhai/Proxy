@@ -301,7 +301,7 @@ model_list:
       api_key: os.environ/XCYCLE_KEY
 
 router_settings:
-  routing_strategy: round-robin  
+  routing_strategy: simple-shuffle
   num_retries: 5                             
   cooldown_time: 86400                       
   allowed_fails: 1
