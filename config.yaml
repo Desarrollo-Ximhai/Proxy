@@ -300,6 +300,12 @@ model_list:
       custom_llm_provider: gemini
       api_key: os.environ/XCYCLE_KEY
 
+router_settings:
+  routing_strategy: usage-based-routing-v2  
+  num_retries: 5                             
+  cooldown_time: 60                          
+  allowed_fails: 1
+
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
 
