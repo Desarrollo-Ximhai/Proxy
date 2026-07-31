@@ -316,4 +316,7 @@ litellm_settings:
   set_verbose: False
   success_callbacks: ["langsmith"]
   failure_callbacks: ["langsmith"]
+  callbacks: ["langsmith"]
+
+
 
