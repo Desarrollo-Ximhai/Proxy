@@ -302,9 +302,11 @@ model_list:
 
 router_settings:
   routing_strategy: simple-shuffle
-  num_retries: 5                             
-  cooldown_time: 86400                       
-  allowed_fails: 1
+  num_retries: 15                  
+  allowed_fails: 1                
+  cooldown_time: 60
+  fallbacks:
+    - {"gemini-flash": ["gemini-flash"]}
 
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
@@ -312,3 +314,6 @@ general_settings:
 litellm_settings:
   telemetry: False
   set_verbose: False
+  success_callbacks: ["langsmith"]
+  failure_callbacks: ["langsmith"]
+
