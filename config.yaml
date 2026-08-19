@@ -431,7 +431,8 @@ model_list:
 router_settings:
   routing_strategy: simple-shuffle
   enable_weighted_failover: true
-  num_retries: 5                  
+  num_retries: 0
+  max_fallbacks: 24                  
   allowed_fails: 1                
   cooldown_time: 60
   fallbacks:
