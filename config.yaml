@@ -428,6 +428,18 @@ model_list:
       custom_llm_provider: gemini
       api_key: os.environ/XCYCLE_KEY
 
+  - model_name: gemini-xcycle-36
+    litellm_params:
+      model: gemini-3.6-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
+  - model_name: gemini-xcycle-35
+    litellm_params:
+      model: gemini-3.5-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
 router_settings:
   routing_strategy: simple-shuffle
   num_retries: 5                  
@@ -436,7 +448,7 @@ router_settings:
   fallbacks:
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
     - {"gemini-lite": ["gemini-lite-31"]}
-    - {"gemini-xcycle": ["gemini-flash-36"]}
+    - {"gemini-xcycle": ["gemini-xcycle-36", "gemini-xcycle-35"]}
 
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
