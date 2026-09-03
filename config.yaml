@@ -438,7 +438,7 @@ model_list:
   - model_name: glm-ximhai-chat
     litellm_params:
       model: openrouter/z-ai/glm-5.3-flash
-      api_key: os.environ/OPENROUTER-XIMHAI
+      api_key: os.environ/OPENROUTER_XIMHAI
       extra_body:
         provider:
           order:
@@ -449,7 +449,7 @@ model_list:
   - model_name: deepseek-ximhai-chat
     litellm_params:
       model: openrouter/deepseek/deepseek-v4-flash-0731
-      api_key: os.environ/OPENROUTER-XIMHAI
+      api_key: os.environ/OPENROUTER_XIMHAI
       extra_body:
         provider:
           order:
