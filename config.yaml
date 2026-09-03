@@ -380,6 +380,7 @@ model_list:
       model: gemini-3.7-flash
       custom_llm_provider: gemini
       api_key: os.environ/GEMINI_API_KEY23
+
   - model_name: gemini-flash
     litellm_params:
       model: gemini-3.7-flash
@@ -434,11 +435,33 @@ model_list:
       custom_llm_provider: gemini
       api_key: os.environ/XCYCLE_KEY
 
-  - model_name: gemini-xcycle-35
+  - model_name: glm-ximhai-chat
     litellm_params:
-      model: gemini-3.5-flash
-      custom_llm_provider: gemini
-      api_key: os.environ/XCYCLE_KEY
+      model: openrouter/z-ai/glm-5.3-flash
+      api_key: os.environ/OPENROUTER-XIMHAI
+      extra_body:
+        provider:
+          order:
+            - "Z.ai"      
+            - "DeepInfra"     
+          allow_fallbacks: true 
+
+  - model_name: deepseek-ximhai-chat
+    litellm_params:
+      model: openrouter/deepseek/deepseek-v4-flash-0731
+      api_key: os.environ/OPENROUTER-XIMHAI
+      extra_body:
+        provider:
+          order:
+            - "DeepInfra"     
+            - "OpenInference"      
+          allow_fallbacks: true 
+
+
+
+
+
+
 
 router_settings:
   routing_strategy: simple-shuffle
@@ -446,8 +469,8 @@ router_settings:
   allowed_fails: 1                
   cooldown_time: 60
   fallbacks:
+    - {"flm-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite"]}
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
-    - {"gemini-lite": ["gemini-lite-31"]}
     - {"gemini-xcycle": ["gemini-xcycle-36", "gemini-xcycle-35"]}
 
 general_settings:
