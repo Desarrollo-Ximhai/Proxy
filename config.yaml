@@ -469,7 +469,7 @@ router_settings:
   allowed_fails: 1                
   cooldown_time: 60
   fallbacks:
-    - {"glm-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite"]}
+    - {"glm-ximhai-chat": [ "deepseek-ximhai-chat"]}
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
     - {"gemini-xcycle": ["gemini-xcycle-36", "gemini-xcycle-35"]}
 
