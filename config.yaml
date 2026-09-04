@@ -458,6 +458,12 @@ model_list:
           allow_fallbacks: true 
 
 
+  - model_name: gemini-lite-ximhai
+    litellm_params:
+      model: gemini-3.5-flash-lite
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
 
 
 
@@ -469,6 +475,7 @@ router_settings:
   allowed_fails: 1                
   cooldown_time: 60
   fallbacks:
+    - {"gemini-lite-ximhai": [ "gemini-lite", "glm-ximhai-chat", "deepseek-ximhai-chat" ]}
     - {"glm-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite"]}
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
     - {"gemini-xcycle": ["gemini-xcycle-36", "gemini-xcycle-35"]}
