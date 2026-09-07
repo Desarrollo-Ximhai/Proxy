@@ -425,6 +425,12 @@ model_list:
 
   - model_name: gemini-xcycle
     litellm_params:
+      model: gemini-3.8-flash
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
+  - model_name: gemini-xcycle-37
+    litellm_params:
       model: gemini-3.7-flash
       custom_llm_provider: gemini
       api_key: os.environ/XCYCLE_KEY
@@ -434,6 +440,14 @@ model_list:
       model: gemini-3.6-flash
       custom_llm_provider: gemini
       api_key: os.environ/XCYCLE_KEY
+
+  - model_name: gemini-xcycle-lite
+    litellm_params:
+      model: gemini-3.5-flash-lite
+      custom_llm_provider: gemini
+      api_key: os.environ/XCYCLE_KEY
+
+
 
   - model_name: glm-ximhai-chat
     litellm_params:
@@ -462,7 +476,7 @@ model_list:
     litellm_params:
       model: gemini-3.5-flash-lite
       custom_llm_provider: gemini
-      api_key: os.environ/XCYCLE_KEY
+      api_key: os.environ/XIMHAI_KEY
 
 
 
@@ -478,7 +492,7 @@ router_settings:
     - {"gemini-lite-ximhai": [ "gemini-lite", "glm-ximhai-chat", "deepseek-ximhai-chat" ]}
     - {"glm-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite"]}
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
-    - {"gemini-xcycle": ["gemini-xcycle-36", "gemini-xcycle-35"]}
+    - {"gemini-xcycle": ["gemini-xcycle-37","gemini-xcycle-36","gemini-xcycle-lite"]}
 
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
