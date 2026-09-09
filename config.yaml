@@ -471,6 +471,11 @@ model_list:
             - "OpenInference"      
           allow_fallbacks: true 
 
+  - model_name: mercury-ximhai-chat
+    litellm_params:
+      model: openrouter/inception/mercury-2.5
+      api_key: os.environ/OPENROUTER_XIMHAI
+
 
   - model_name: gemini-lite-ximhai
     litellm_params:
@@ -493,6 +498,7 @@ router_settings:
     - {"glm-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite"]}
     - {"gemini-flash": ["gemini-flash-36", "gemini-lite"]}
     - {"gemini-xcycle": ["gemini-xcycle-37","gemini-xcycle-36","gemini-xcycle-lite"]}
+    - {"mercury-ximhai-chat": [ "deepseek-ximhai-chat", "gemini-lite" ]}
 
 general_settings:
   master_key: "LlnrmvdUt201X3Zwd8BTG2pdDY5044eCgqv8M7DC"
