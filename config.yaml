@@ -388,6 +388,151 @@ model_list:
       api_key: os.environ/GEMINI_API_KEY24
 
 
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY1
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY2
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY3
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY4
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY5
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY6
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY7
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY8
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY9
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY10
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY11
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY12
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY13
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY14
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY15
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY16
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY17
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY18
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY19
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY20
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY21
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY22
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY23
+
+  - model_name: gemini-embedding
+    litellm_params:
+      model: gemini-embedding-001
+      custom_llm_provider: gemini
+      api_key: os.environ/GEMINI_API_KEY24
+
+
   - model_name: QWEN-3    
     litellm_params:
       model: chutes/Qwen/Qwen3-32B-TEE
@@ -482,6 +627,7 @@ model_list:
       model: gemini-3.5-flash-lite
       custom_llm_provider: gemini
       api_key: os.environ/XIMHAI_KEY
+
 
 
 
