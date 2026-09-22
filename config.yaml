@@ -614,7 +614,7 @@ model_list:
 
   - model_name: flash-ximhai-dev
     litellm_params:
-      model: google/gemini-3.8-flash
+      model: google/gemini-3.7-flash
       api_key: os.environ/OPENROUTER_XIMHAI
 
   - model_name: mercury-ximhai-chat
