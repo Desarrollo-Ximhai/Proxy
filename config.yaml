@@ -609,12 +609,6 @@ model_list:
     litellm_params:
       model: openrouter/deepseek/deepseek-v4-flash-0731
       api_key: os.environ/OPENROUTER_XIMHAI
-      extra_body:
-        provider:
-          order:
-            - "DeepInfra"     
-            - "OpenInference"      
-          allow_fallbacks: true 
 
   - model_name: mercury-ximhai-chat
     litellm_params:
