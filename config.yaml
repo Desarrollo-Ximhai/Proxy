@@ -619,7 +619,7 @@ model_list:
 
   - model_name: mercury-ximhai-chat
     litellm_params:
-      model: openai/gpt-oss-120b:nitro
+      model: openrouter/openai/gpt-oss-120b:nitro
       api_key: os.environ/OPENROUTER_XIMHAI
 
 
